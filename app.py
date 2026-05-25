@@ -81,7 +81,7 @@ HTML_INDEX = '''
     <div class="header">
         <img src="/static/logo.png" alt="Logo" onerror="this.style.display='none'">
         <h1>Bôlô Market</h1>
-        <p>Les prestataires créatifs et événementiels du mboa 237</p>
+        <p>Faites confiance à la jeunesse du mboa 237</p>
     </div>
     <div class="container">
         <h2>🛠️ Services disponibles</h2>
@@ -215,7 +215,7 @@ def commander():
 def admin():
     mdp = request.args.get('mdp', '')
     if mdp != 'Bôlômarket2026':
-        return 'Accès refusé. Veuillez ajouter ?mdp=teddymarket2026 à l\'URL.'
+        return 'Accès refusé. Veuillez ajouter ?mdp=écris le mot bon de passe warrrr à l\'URL.'
     commandes = charger_commandes()
     services = charger_services()
     return render_template_string(HTML_ADMIN, commandes=commandes, services=services)
@@ -233,7 +233,7 @@ def ajouter_service():
     }
     services.append(nouveau)
     sauvegarder_services(services)
-    return redirect(url_for('admin') + '?mdp=teddymarket2024')
+    return redirect(url_for('admin') + '?mdp=teddymarket2026')
 
 # ---------------------------
 # LANCEMENT
