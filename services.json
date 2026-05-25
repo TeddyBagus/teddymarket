@@ -1,0 +1,17 @@
+[
+  {
+    "nom": "\ud83c\udfa8 Cr\u00e9ation de logo",
+    "categorie": "Graphisme",
+    "description": "Logo professionnel pour votre entreprise."
+  },
+  {
+    "nom": "\ud83c\udfac Montage vid\u00e9o",
+    "categorie": "Audiovisuel",
+    "description": "Montage de vos vid\u00e9os \u00e9v\u00e9nementielles."
+  },
+  {
+    "nom": "\ud83c\udf89 Organisation d'\u00e9v\u00e9nements",
+    "categorie": "\u00c9v\u00e9nementiel",
+    "description": "D\u00e9coration, mise en place, recherche de salle pour vos anniversaires, mariages, etc."
+  }
+]
