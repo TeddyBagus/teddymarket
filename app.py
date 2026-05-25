@@ -214,7 +214,7 @@ def commander():
 @app.route('/admin')
 def admin():
     mdp = request.args.get('mdp', '')
-    if mdp != 'Bôlômarket2026':
+    if mdp != 'teddymarket2026':
         return 'Accès refusé. Veuillez ajouter ?mdp=écris le mot bon de passe warrrr à l\'URL.'
     commandes = charger_commandes()
     services = charger_services()
@@ -223,7 +223,7 @@ def admin():
 @app.route('/admin/ajouter_service', methods=['POST'])
 def ajouter_service():
     mdp = request.args.get('mdp', '')
-    if mdp != 'Bôlômarket2026':
+    if mdp != 'teddymarket2026':
         return 'Accès refusé.'
     services = charger_services()
     nouveau = {
