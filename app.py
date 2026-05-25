@@ -241,5 +241,13 @@ def ajouter_service():
 if __name__ == '__main__':
     charger_services()
     charger_commandes()
-    webbrowser.open('http://127.0.0.1:5000')
-    app.run(debug=True, host='127.0.0.1', port=5000, use_reloader=False)
+    # On lance sur le port 5000 en local, mais sur le port de Render en prod
+    port = int(os.environ.get('PORT', 5000))
+    if os.environ.get('RENDER'):
+        # En production sur Render
+        app.run(debug=False, host='0.0.0.0', port=port)
+    else:
+        # En local sur ton PC
+        import webbrowser
+        webbrowser.open('http://127.0.0.1:5000')
+        app.run(debug=True, host='127.0.0.1', port=port, use_reloader=False)
