@@ -1,0 +1,7 @@
+[
+  {
+    "id": 1,
+    "email": "admin@teddymarket.com",
+    "password_hash": "scrypt:32768:8:1$q5DrrojS6jfYVD9x$55196a607bdbf6e986318bcce13d0cfecccdbb905d76ea046ea0fa39288f0b6df99cf233522e0c0688ff5a5a0f57b274db618a875ad79c36842ed74577cc878f"
+  }
+]
