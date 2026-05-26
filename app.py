@@ -18,7 +18,7 @@ login_manager.login_message = "Veuillez vous connecter pour accéder à cette pa
 # Modèle utilisateur simple (juste l'admin pour l'instant)
 # ------------------------------------------------------------
 class User(UserMixin):
-    def init(self, id, email, password_hash):
+    def __init__(self, id, email, password_hash):
         self.id = id
         self.email = email
         self.password_hash = password_hash
@@ -30,7 +30,7 @@ def charger_utilisateurs():
     if not os.path.exists(USERS_FILE):
         # Créer un admin par défaut (email: admin@teddymarket.com, mdp: admin123)
         default_password = generate_password_hash('admin237')
-        users = [{"id": 1, "email": "admin@teddymarket.com", "admin123": default_password}]
+        users = [{"id": 1, "email": "admin@teddymarket.com", "password_hash": default_password}]
         with open(USERS_FILE, 'w', encoding='utf-8') as f:
             json.dump(users, f, indent=2)
     with open(USERS_FILE, 'r', encoding='utf-8') as f:
