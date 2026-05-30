@@ -57,7 +57,7 @@ COMMANDES_FILE = 'commandes.json'
 def charger_services():
     if not os.path.exists(SERVICES_FILE):
         services_defaut = [
-            {"nom": "🎨 Création de logo", "categorie": "Graphisme", "description": "Logo professionnel pour votre entreprise."},
+            {"nom": "🎨 Création de logo ou flyer", "categorie": "Graphisme", "description": "Logo professionnel pour votre entreprise."},
             {"nom": "🎬 Montage vidéo", "categorie": "Audiovisuel", "description": "Montage de vos vidéos événementielles."},
             {"nom": "🎉 Organisation d'événements", "categorie": "Événementiel", "description": "Décoration, mise en place, recherche de salle pour vos anniversaires, mariages, etc."}
         ]
