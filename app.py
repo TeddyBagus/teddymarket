@@ -117,7 +117,7 @@ HTML_INDEX = '''
     <div class="header">
         <img src="/static/logo.png" alt="Logo" onerror="this.style.display='none'">
         <h1>Bôlô Market</h1>
-        <p>Le professionnalisme et la compétence nous caractérisent</p>
+        <p>Le bon prestataire, sans stress</p>
     </div>
 
     <div class="container">
